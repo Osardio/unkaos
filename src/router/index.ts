@@ -8,6 +8,7 @@ import PageIssueTypes from "../views/PageIssueTypes.vue";
 import PageIssueStatuses from "../views/PageIssueStatuses.vue";
 import PageIssues from "../views/PageIssues.vue";
 import PageIssue from "../views/PageIssue.vue";
+import PageIssueNew from "../views/PageIssueNew.vue";
 import PageLogin from "../views/PageLogin.vue";
 import PageLanding from "../views/PageLanding.vue";
 import PageConfigs from "../views/PageConfigs.vue";
@@ -61,6 +62,7 @@ const router = createRouter({
     },
     { path: "/configs", component: PageConfigs, name: "Настройки" },
     { path: "/issue/:id", component: PageIssue, props: true, name: "Задача " },
+    { path: "/newissue/:id", component: PageIssueNew, props: true, name: "Задач " },
     { path: "/board/:uuid", component: PageBoard, props: true, name: "Доска " },
     { path: "/issue/", component: PageIssue, name: "Новая задача" },
     { path: "/board/", component: PageBoard, name: "Новая доска" },
