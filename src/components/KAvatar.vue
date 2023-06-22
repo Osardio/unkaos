@@ -32,7 +32,7 @@ export default {
 
 <style scoped>
 .user-avatar {
-
+  height: 40px;
 }
 
 .user-avatar img {
